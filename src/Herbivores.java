@@ -1,4 +1,8 @@
-public class Herbivores import static zoo.ValidateUtils.validateString;
+package zoo;
+
+import java.util.Objects;
+
+import static zoo.ValidateUtils.validateString;
 
 public class Herbivores extends Mammals {
 
@@ -67,5 +71,4 @@ public class Herbivores extends Mammals {
                 " km/h; name: " + name +
                 "; age: " + age + " years.";
     }
-}{
 }

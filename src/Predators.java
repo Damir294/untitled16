@@ -1,4 +1,8 @@
-public class Predators mport static zoo.ValidateUtils.validateString;
+package zoo;
+
+import java.util.Objects;
+
+import static zoo.ValidateUtils.validateString;
 
 public class Predators extends Mammals {
 
@@ -68,11 +72,4 @@ public class Predators extends Mammals {
                 "; age: " + age +
                 " years.";
     }
-}
-Footer
-        © 2022 GitHub, Inc.
-        Footer navigation
-        Terms
-        Privacy
-        {
 }
