@@ -1,4 +1,4 @@
-package zoo;
+
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ import static zoo.ValidateUtils.validateString;
 
 public class Amphibians extends Animals {
 
-    String livingEnvironment;
+  private    String livingEnvironment;
 
     public Amphibians(String name) {
         this(name, 0, "no information");
@@ -19,6 +19,7 @@ public class Amphibians extends Animals {
     }
 
     public void hunt() {
+        System.out.println();
     }
 
     public void printInfo() {

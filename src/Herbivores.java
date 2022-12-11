@@ -1,4 +1,3 @@
-package zoo;
 
 import java.util.Objects;
 
@@ -6,7 +5,7 @@ import static zoo.ValidateUtils.validateString;
 
 public class Herbivores extends Mammals {
 
-    String typeOfFood;
+    private  String typeOfFood;
 
     public Herbivores(String name) {
         this(name, 0, "no information", 0.0, "no information");

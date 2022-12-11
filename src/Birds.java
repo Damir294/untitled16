@@ -1,4 +1,4 @@
-package zoo;
+
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ import static zoo.ValidateUtils.validateString;
 
 public abstract class Birds extends Animals {
 
-    String livingEnvironment;
+    private String livingEnvironment;
 
     public Birds(String name) {
         this(name, 0, "no information");

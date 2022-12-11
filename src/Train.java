@@ -7,7 +7,7 @@ public class Train extends Transport {
     String departureStation;
     String arrivalStation;
     int wagonsCount;
-    String refill;
+    private String refill;
 
     public Train(String brand, String model, int productionYear, String productionCountry) {
         this(brand, model, productionYear, productionCountry, 0, 0, 0,

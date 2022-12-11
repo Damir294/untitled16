@@ -1,4 +1,4 @@
-package zoo;
+
 
 public class ValidateUtils {
     public static String validateString(String value) {

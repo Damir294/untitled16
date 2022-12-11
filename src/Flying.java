@@ -1,4 +1,4 @@
-package zoo;
+
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ import static zoo.ValidateUtils.validateString;
 
 public class Flying extends Birds {
 
-    String typeOfMovement;
+    private String typeOfMovement;
 
     public Flying(String name) {
         this(name, 0, "no information", "no information");

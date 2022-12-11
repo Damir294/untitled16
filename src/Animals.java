@@ -1,4 +1,4 @@
-package zoo;
+
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ import static zoo.ValidateUtils.validateNum;
 import static zoo.ValidateUtils.validateString;
 
 public abstract class Animals {
-    String name;
+    private String name;
     int age;
 
     public Animals(String name) {

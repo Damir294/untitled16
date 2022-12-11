@@ -1,4 +1,4 @@
-package zoo;
+
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ import static zoo.ValidateUtils.validateString;
 
 public abstract class Mammals extends Animals {
 
-    String livingEnvironment;
+   private String livingEnvironment;
     double movementSpeed;
 
 
