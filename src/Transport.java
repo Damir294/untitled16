@@ -62,14 +62,14 @@ public class Transport {
             this.color = validateString(color);
         }
 
-        public double getMaxSpeed() {
+        //public double getMaxSpeed() {
             return maxSpeed;
-        }
+        //}
 
-        public void setMaxSpeed(double maxSpeed) {
+        //public void setMaxSpeed(double maxSpeed) {
             this.maxSpeed = validateDoubleNum(maxSpeed);
-        }
+        //}
 
-        public void showCharacteristics() {
+      //  public void showCharacteristics() {
             System.out.println(toString());
-}
+//}/*

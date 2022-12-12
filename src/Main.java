@@ -103,7 +103,7 @@ public class Main {
                 "Б123ББ678", 5, false, new Car.Key(false,
                 true), insuranceHyundai, "заряжается на электропарковке");
 
-        Инкапсуляция. Домашнее задание 3 Задание 1 - Вложенный класс Key. Тестирование объектов
+        //Инкапсуляция. Домашнее задание 3 Задание 1 - Вложенный класс Key. Тестирование объектов
        kia.setKey(new Car.Key(true, true));
        bmw.setKey(new Car.Key(false, false));
         System.out.println("\nИнкапсуляция. Домашнее задание 3 Задание 1 - Вложенный класс Insurance");

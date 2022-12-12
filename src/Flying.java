@@ -2,7 +2,7 @@
 
 import java.util.Objects;
 
-import static zoo.ValidateUtils.validateString;
+
 
 public class Flying extends Birds {
 
@@ -12,7 +12,7 @@ public class Flying extends Birds {
         this(name, 0, "no information", "no information");
     }
 
-    public Flying(String name, int age, String livingEnvironment, String typeOfMovement) {
+    /*public Flying(String name, int age, String livingEnvironment, String typeOfMovement) {
         super(name, age, livingEnvironment);
 
         this.typeOfMovement = validateString(typeOfMovement);

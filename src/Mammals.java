@@ -2,7 +2,7 @@
 
 import java.util.Objects;
 
-import static zoo.ValidateUtils.validateString;
+
 
 public abstract class Mammals extends Animals {
 

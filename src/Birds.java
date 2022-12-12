@@ -2,7 +2,7 @@
 
 import java.util.Objects;
 
-import static zoo.ValidateUtils.validateString;
+
 
 public abstract class Birds extends Animals {
 
@@ -12,18 +12,18 @@ public abstract class Birds extends Animals {
         this(name, 0, "no information");
     }
 
-    public Birds(String name, int age, String livingEnvironment) {
-        super(name, age);
-        this.livingEnvironment = validateString(livingEnvironment);
-    }
+   // public Birds(String name, int age, String livingEnvironment) {
+        //super(name, age);
+      //  this.livingEnvironment = validateString(livingEnvironment);
+    //}
 
     public abstract void hunt();
 
-    public String getLivingEnvironment() {
+    /*public String getLivingEnvironment() {
         return livingEnvironment;
     }
 
-    public void setLivingEnvironment(String livingEnvironment) {
+   /* public void setLivingEnvironment(String livingEnvironment) {
         this.livingEnvironment = validateString(livingEnvironment);
     }
 

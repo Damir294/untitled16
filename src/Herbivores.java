@@ -1,7 +1,7 @@
 
 import java.util.Objects;
 
-import static zoo.ValidateUtils.validateString;
+
 
 public class Herbivores extends Mammals {
 
@@ -14,7 +14,7 @@ public class Herbivores extends Mammals {
     public Herbivores(String name, int age, String livingEnvironment, double movementSpeed, String typeOfFood) {
         super(name, age, livingEnvironment, movementSpeed);
 
-        this.typeOfFood = validateString(typeOfFood);
+        //this.typeOfFood = validateString(typeOfFood);
     }
 
     public void graze() {
@@ -28,9 +28,9 @@ public class Herbivores extends Mammals {
         return typeOfFood;
     }
 
-    public void setTypeOfFood(String typeOfFood) {
-        this.typeOfFood = validateString(typeOfFood);
-    }
+    //public void setTypeOfFood(String typeOfFood) {
+      //  this.typeOfFood = validateString(typeOfFood);
+   // }
 
     @Override
     public void walk() {
