@@ -12,10 +12,10 @@ public class Flying extends Birds {
         this(name, 0, "no information", "no information");
     }
 
-    /*public Flying(String name, int age, String livingEnvironment, String typeOfMovement) {
+    public Flying(String name, int age, String livingEnvironment, String typeOfMovement) {
         super(name, age, livingEnvironment);
 
-        this.typeOfMovement = validateString(typeOfMovement);
+        //this.typeOfMovement = validateString(typeOfMovement);
     }
 
     public void fly() {
@@ -30,7 +30,7 @@ public class Flying extends Birds {
     }
 
     public void setTypeOfMovement(String typeOfMovement) {
-        this.typeOfMovement = validateString(typeOfMovement);
+        //this.typeOfMovement = validateString(typeOfMovement);
     }
 
     @Override
@@ -64,9 +64,10 @@ public class Flying extends Birds {
 
     @Override
     public String toString() {
+        String name = null;
         return "Class Flying; " +
                 "typeOfMovement: " + typeOfMovement +
-                "; livingEnvironment: " + livingEnvironment +
+             //   "; livingEnvironment: " + livingEnvironment +
                 "; name: " + name +
                 "; age: " + age +
                 " years";

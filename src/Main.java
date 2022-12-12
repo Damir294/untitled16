@@ -115,7 +115,8 @@ public class Main {
         lada.getInsurance().checkNumberOfInsurance();
 
         System.out.println("\nИнкапсуляция. Домашнее задание 2 - задание 1");
-        тестирование
+        Object тестирование;
+        тестирование = null;
         lada.setEngineVolume(-2);
         lada.setColor("  ");
         lada.setTransmission("  ");

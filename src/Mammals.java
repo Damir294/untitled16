@@ -17,7 +17,7 @@ public abstract class Mammals extends Animals {
     public Mammals(String name, int age, String livingEnvironment, double movementSpeed) {
         super(name, age);
 
-        this.livingEnvironment = validateString(livingEnvironment);
+        this.livingEnvironment = ValidateUtils.validateString(livingEnvironment);
         this.movementSpeed = validateMovementSpeed(movementSpeed);
     }
 
@@ -29,7 +29,7 @@ public abstract class Mammals extends Animals {
 
     public void setLivingEnvironment(String livingEnvironment) {
 
-        this.livingEnvironment = validateString(livingEnvironment);
+        this.livingEnvironment = ValidateUtils.validateString(livingEnvironment);
     }
 
     public double getMovementSpeed() {

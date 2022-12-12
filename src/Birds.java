@@ -12,19 +12,19 @@ public abstract class Birds extends Animals {
         this(name, 0, "no information");
     }
 
-   // public Birds(String name, int age, String livingEnvironment) {
-        //super(name, age);
-      //  this.livingEnvironment = validateString(livingEnvironment);
-    //}
+   public Birds(String name, int age, String livingEnvironment) {
+        super(name, age);
+       this.livingEnvironment = ValidateUtils.validateString(livingEnvironment);
+    }
 
     public abstract void hunt();
 
-    /*public String getLivingEnvironment() {
+    public String getLivingEnvironment() {
         return livingEnvironment;
     }
 
-   /* public void setLivingEnvironment(String livingEnvironment) {
-        this.livingEnvironment = validateString(livingEnvironment);
+    public void setLivingEnvironment(String livingEnvironment) {
+        this.livingEnvironment = ValidateUtils.validateString(livingEnvironment);
     }
 
     @Override
