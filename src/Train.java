@@ -2,6 +2,7 @@
 
 public class Train extends Transport {
 
+    private static final String model1 = null;
     double travelPrice;
     double travelTime;
     String departureStation;
@@ -9,10 +10,34 @@ public class Train extends Transport {
     int wagonsCount;
     private String refill;
 
-    public Train(String brand, String model, int productionYear, String productionCountry) {
-        this(brand, model, productionYear, productionCountry, 0, 0, 0,
-                "Данные не корректные", "Данные не корректные", 10, "дизель");
+    public Train(String brand, String model, String productionCountry, int productionYear, String color, double maxSpeed) {
+        super(brand, model, productionCountry, productionYear, color, model1, productionCountry1, productionCountry2, productionCountry3, maxSpeed);
     }
+
+    public Train(String brand, String model, int productionYear, String productionCountry, double maxSpeed) {
+        super(brand, model, productionYear, productionCountry, maxSpeed, model1, productionCountry1, productionCountry2, productionCountry3);
+    }
+
+    public Train(String brand, String model, int productionYear, String productionCountry, String color, double maxSpeed, String brand1, String model1, int productionYear1, String productionCountry1) {
+        super(brand, model, productionYear, productionCountry, color, maxSpeed, brand1, model1, productionYear1, productionCountry1);
+    }
+
+    //public Train(String refill) {
+        //super(brand, getModel(), getProductionYear(), productionCountry, "Данные не корректные", maxSpeed);
+        //this.refill = refill;
+
+
+    @Override
+    public void refill() {
+
+    }
+}
+
+
+// *public Train(String brand, String model, int productionYear, String productionCountry) {
+       // this(brand, model, productionYear, productionCountry, 0, 0, 0,
+            //    "Данные не корректные", "Данные не корректные", 10, "дизель");
+    //*
 
     /*public Train(double maxSpeed) {
         super(brand, model, productionYear, productionCountry, maxSpeed);
@@ -95,4 +120,5 @@ public class Train extends Transport {
                 ", время в пути: " + getTravelTime() + "ч. Цена поездки: " + getTravelPrice() + " рублей, в поезде "
                 + getWagonsCount() + " вагонов, заправка: " + refill + ".";
     }
-/*}
+
+     */

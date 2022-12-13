@@ -2,7 +2,7 @@ public class Bus extends Transport {
 
     public Bus(String brand, String model, int productionYear, String productionCountry, String color,
                double maxSpeed) {
-        super(brand, model, productionYear, productionCountry, color, maxSpeed);
+        super(brand, model, productionYear, productionCountry, color, maxSpeed, brand1, model1, productionCountry3, productionYear1);
     }
 
 

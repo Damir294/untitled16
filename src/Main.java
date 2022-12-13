@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
     }
+}
 
-    public static void doHw1Task3() {
-
+ //   public static void doHw1Task3() {
+/*
         System.out.println("Домашнее задание 1 Задание 3");
         transport.Car lada = new Car();
         lada.brand = "Lada";
@@ -16,7 +17,7 @@ public class Main {
         lada.productionCountry = "Россия";
         lada.productionYear = 2015;
         lada.showCharacteristics();
-
+/*
         /*transport.Car audi = new transport.Car();
         audi.brand = "Audi";
         audi.model = "A8 50 L TDI quattro";
@@ -164,5 +165,5 @@ public class Main {
     private static class Car {
         public void setColor(String s) {
         }
-    }
-/*}
+
+ *}
