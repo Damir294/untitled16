@@ -1,4 +1,4 @@
-import static zoo.ValidateUtils.*;
+
 
 public class Train extends Transport {
 
@@ -14,18 +14,16 @@ public class Train extends Transport {
                 "Данные не корректные", "Данные не корректные", 10, "дизель");
     }
 
-    public Train(String brand, String model, int productionYear, String productionCountry, double maxSpeed,
-                 double travelPrice, double travelTime, String departureStation, String arrivalStation,
-                 int wagonsCount, String refill) {
+    /*public Train(double maxSpeed) {
         super(brand, model, productionYear, productionCountry, maxSpeed);
 
-        this.departureStation = validateString(departureStation);
-        this.arrivalStation = validateString(arrivalStation);
-        this.travelPrice = validateDoubleNum(travelPrice);
-        this.travelTime = validateDoubleNum(travelTime);
-        this.wagonsCount = validateNum(wagonsCount);
-        this.refill = validateString(refill);
-    }
+        this.departureStation = ValidateUtils.validateString(departureStation);
+        this.arrivalStation = ValidateUtils.validateString(arrivalStation);
+        this.travelPrice = ValidateUtils.validateDoubleNum(travelPrice);
+        this.travelTime = ValidateUtils.validateDoubleNum(travelTime);
+        this.wagonsCount = ValidateUtils.validateNum(wagonsCount);
+        this.refill = ValidateUtils.validateString(refill);
+    //}
 
     @Override
     public void refill() {
@@ -43,7 +41,7 @@ public class Train extends Transport {
 
     public void setTravelPrice(double travelPrice) {
 
-        this.travelPrice = validateDoubleNum(travelPrice);
+        new Train(travelPrice);
     }
 
     public double getTravelTime() {
@@ -52,7 +50,7 @@ public class Train extends Transport {
 
     public void setTravelTime(double travelTime) {
 
-        this.travelTime = validateDoubleNum(travelTime);
+        this.travelTime = ValidateUtils.validateDoubleNum(travelTime);
     }
 
     public String getDepartureStation() {
@@ -72,6 +70,10 @@ public class Train extends Transport {
         this.refill = validateString(refill);
     }
 
+    private String validateString(String refill) {
+        return null;
+    }
+
     public int getWagonsCount() {
         return wagonsCount;
     }
@@ -79,6 +81,10 @@ public class Train extends Transport {
     public void setWagonsCount(int wagonsCount) {
 
         this.wagonsCount = validateNum(wagonsCount);
+    }
+
+    private int validateNum(int wagonsCount) {
+        return 0;
     }
 
     @Override
@@ -89,4 +95,4 @@ public class Train extends Transport {
                 ", время в пути: " + getTravelTime() + "ч. Цена поездки: " + getTravelPrice() + " рублей, в поезде "
                 + getWagonsCount() + " вагонов, заправка: " + refill + ".";
     }
-}
+/*}

@@ -8,7 +8,7 @@ public class Main {
     public static void doHw1Task3() {
 
         System.out.println("Домашнее задание 1 Задание 3");
-        transport.Car lada = new transport.Car();
+        transport.Car lada = new Car();
         lada.brand = "Lada";
         lada.model = "Grande";
         lada.engineVolume = 1.7;
@@ -17,7 +17,7 @@ public class Main {
         lada.productionYear = 2015;
         lada.showCharacteristics();
 
-        transport.Car audi = new transport.Car();
+        /*transport.Car audi = new transport.Car();
         audi.brand = "Audi";
         audi.model = "A8 50 L TDI quattro";
         audi.engineVolume = 3.0;
@@ -116,7 +116,6 @@ public class Main {
 
         System.out.println("\nИнкапсуляция. Домашнее задание 2 - задание 1");
         Object тестирование;
-        тестирование = null;
         lada.setEngineVolume(-2);
         lada.setColor("  ");
         lada.setTransmission("  ");
@@ -161,4 +160,9 @@ public class Main {
         gaz.refill();
         paz.refill();
     }
-}
+
+    private static class Car {
+        public void setColor(String s) {
+        }
+    }
+/*}

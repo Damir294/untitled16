@@ -2,7 +2,7 @@
 
 import java.util.Objects;
 
-import static zoo.ValidateUtils.validateString;
+
 
 public class Amphibians extends Animals {
 
@@ -15,7 +15,7 @@ public class Amphibians extends Animals {
     public Amphibians(String name, int age, String livingEnvironment) {
         super(name, age);
 
-        this.livingEnvironment = validateString(livingEnvironment);
+        this.livingEnvironment = ValidateUtils.validateString(livingEnvironment);
     }
 
     public void hunt() {
@@ -30,8 +30,15 @@ public class Amphibians extends Animals {
         return livingEnvironment;
     }
 
+    @Override
+    public String toString() {
+        return "Amphibians{" +
+                "livingEnvironment='" + livingEnvironment + '\'' +
+                '}';
+    }
+
     public void setLivingEnvironment(String livingEnvironment) {
-        this.livingEnvironment = validateString(livingEnvironment);
+        this.livingEnvironment = ValidateUtils.validateString(livingEnvironment);
     }
 
     @Override
@@ -58,11 +65,4 @@ public class Amphibians extends Animals {
         return Objects.hash(super.hashCode(), livingEnvironment);
     }
 
-    @Override
-    public String toString() {
-        return "Class Amphibians; " +
-                "livingEnvironment: " + livingEnvironment +
-                "; name: " + name +
-                "; age: " + age + " years.";
-    }
 }

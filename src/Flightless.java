@@ -5,23 +5,16 @@ import java.util.Objects;
 
 public class Flightless extends Birds {
 
-   private String typeOfMovement;
-
-    public Flightless(String name) {
-        this(name, 0, "no information", "no information");
-    }
+   private final String typeOfMovement;
 
     public Flightless(String name, int age, String livingEnvironment, String typeOfMovement) {
         super(name, age, livingEnvironment);
 
-        this.typeOfMovement = validateString(typeOfMovement);
-    }
-
-    public void walk() {
+        this.typeOfMovement = ValidateUtils.validateString(typeOfMovement);
     }
 
     public void printInfo() {
-        System.out.println(toString());
+        System.out.println(this);
     }
 
     @Override
@@ -39,14 +32,6 @@ public class Flightless extends Birds {
         System.out.println("I quickly move my legs");
     }
 
-    public String getTypeOfMovement() {
-        return typeOfMovement;
-    }
-
-    public void setTypeOfMovement(String typeOfMovement) {
-        this.typeOfMovement = validateString(typeOfMovement);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -58,11 +43,14 @@ public class Flightless extends Birds {
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), typeOfMovement);
+        int hash1 = Objects.hash(super.hashCode(), typeOfMovement);
+        return hash1;
     }
 
     @Override
     public String toString() {
+        String name = null;
+        String livingEnvironment = null;
         return "Class Flightless; " +
                 "typeOfMovement: " + typeOfMovement +
                 "; livingEnvironment: " + livingEnvironment +

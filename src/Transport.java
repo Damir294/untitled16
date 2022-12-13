@@ -1,7 +1,7 @@
 public class Transport {
     public abstract class Transport
 
-    private final String brand;
+    final String brand;
     private final String model;
     private final int productionYear;
     private final String productionCountry;
@@ -9,7 +9,7 @@ public class Transport {
     private double maxSpeed;
 }
 
-        public Transport(String color, double maxSpeed) {
+        public Transport() {
             this("Данные не корректные", "Данные не корректные", 2000,
                     "Данные не корректные", color, maxSpeed);
         }

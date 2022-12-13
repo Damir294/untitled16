@@ -2,8 +2,7 @@
 
 import java.util.Objects;
 
-import static zoo.ValidateUtils.validateNum;
-import static zoo.ValidateUtils.validateString;
+
 
 public abstract class Animals {
     private String name;
@@ -14,8 +13,8 @@ public abstract class Animals {
     }
 
     public Animals(String name, int age) {
-        this.name = validateString(name);
-        this.age = validateNum(age);
+        this.name = ValidateUtils.validateString(name);
+        this.age = ValidateUtils.validateNum(age);
     }
 
     public abstract void eat();
@@ -30,7 +29,7 @@ public abstract class Animals {
     }
 
     public final void setName(String name) {
-        this.name = validateString(name);
+        this.name = ValidateUtils.validateString(name);
     }
 
     public int getAge() {
