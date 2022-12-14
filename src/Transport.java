@@ -10,43 +10,47 @@ public  abstract class Transport {
     private String color;
     private double maxSpeed;
 
+    protected Transport(String model) {
+        this.model = model;
+    }
 
-    //public Transport(String brand, String model, int productionYear, String productionCountry, String ignoredДанныеНеКорректные, double maxSpeed) {
+
+    public String Transport(String brand, String model, int productionYear, String productionCountry, String ignoredДанныеНеКорректные, double maxSpeed) {
             //this(null, null, 0, null, null, 0.0);
 
 
-    public Transport(String brand, String model, int productionCountry, String productionYear, String color, String model1, String productionCountry1, String productionCountry2, String productionCountry3, double maxSpeed) {
+    //public Transport(String brand, String model, int productionCountry, String productionYear, String color, String model1, String productionCountry1, String productionCountry2, String productionCountry3, double maxSpeed) {
             this(brand, model, productionYear, productionCountry, color, 0, productionCountry1, productionCountry2, productionCountry3);
         this.model = model1;
         this.maxSpeed = maxSpeed;
         this.brand = null;
-    }
+    //}
 
-        public Transport(String brand, String model, int productionYear, String productionCountry, double maxSpeed, String model1, String productionCountry1, String productionCountry2, String productionCountry3) {
-            this(brand, model, productionYear, productionCountry, "Данные не корректные", model1, productionCountry1, productionCountry2, productionCountry3, maxSpeed);
-            this.productionYear = productionYear;
-            this.maxSpeed = maxSpeed;
-            this.productionCountry1 = productionCountry1;
-            this.productionCountry2 = productionCountry2;
-            this.productionCountry = productionCountry3;
-            this.brand = null;
-        }
+        //public Transport(String brand, String model, int productionYear, String productionCountry, double maxSpeed, String model1, String productionCountry1, String productionCountry2, String productionCountry3) {
+            //this(brand, model, productionYear, productionCountry, "Данные не корректные", model1, productionCountry1, productionCountry2, productionCountry3, maxSpeed);
+            //this.productionYear = productionYear;
+            //this.maxSpeed = maxSpeed;
+            //this.productionCountry1 = productionCountry1;
+            ///this.productionCountry2 = productionCountry2;
+            //this.productionCountry = productionCountry3;
+            //this.brand = null;
+        //}
 
 
-        public Transport(String brand, String model, int productionYear, String productionCountry,
-                         String color, double maxSpeed, String brand1, String model1, int productionYear1, String productionCountry1) {
+        //*public Transport(String brand, String model, int productionYear, String productionCountry,
+                        // String color, double maxSpeed, String brand1, String model1, int productionYear1, String productionCountry1) {
 
            //= validateDoubleNum(maxSpeed);
-            this.brand = brand1;
-            this.model = model1;
-            this.productionYear = productionYear1;
-            this.productionCountry = productionCountry1;
-        }
+          //  this.brand = brand1;
+            //this.model = Train.model1;
+            //this.productionYear = productionYear1;
+            //this.productionCountry = productionCountry1;
+        //*}
 
-    public abstract void refill();
+    //*public abstract void refill();
 
         public String getBrand() {
-            return brand;
+            return Integer.parseInt(brand);
         }
 
         public String getModel() {
@@ -62,8 +66,9 @@ public  abstract class Transport {
         }
 
         public String getColor() {
-            return color;
-        }
+            String color1 = color;
+            return color1;
+       //* }
 
         public void setColor(String color) {
 

@@ -24,6 +24,15 @@ public class Herbivores extends Mammals {
         System.out.println(toString());
     }
 
+    @Override
+    public String toString() {
+        return "Herbivores{" +
+                "typeOfFood='" + typeOfFood + '\'' +
+                ", movementSpeed=" + movementSpeed +
+                ", age=" + age +
+                '}';
+    }
+
     public String getTypeOfFood() {
         return typeOfFood;
     }
@@ -61,13 +70,4 @@ public class Herbivores extends Mammals {
         return Objects.hash(super.hashCode(), typeOfFood);
     }
 
-    @Override
-    public String toString() {
-        return "Class Herbivores; " +
-                "typeOfFood: " + typeOfFood +
-                "; livingEnvironment: " + livingEnvironment +
-                "; movementSpeed: " + movementSpeed +
-                " km/h; name: " + name +
-                "; age: " + age + " years.";
-    }
 }

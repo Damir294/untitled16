@@ -24,6 +24,15 @@ public class Predators extends Mammals {
         System.out.println(toString());
     }
 
+    @Override
+    public String toString() {
+        return "Predators{" +
+                "typeOfFood='" + typeOfFood + '\'' +
+                ", movementSpeed=" + movementSpeed +
+                ", age=" + age +
+                '}';
+    }
+
     public String getTypeOfFood() {
         return typeOfFood;
     }
@@ -63,14 +72,4 @@ public class Predators extends Mammals {
         return Objects.hash(super.hashCode(), typeOfFood);
     }
 
-    @Override
-    public String toString() {
-        return "Class Predators; " +
-                "typeOfFood: " + typeOfFood +
-                "; livingEnvironment: " + livingEnvironment +
-                "; movementSpeed: " + movementSpeed +
-                " km/h; name: " + name +
-                "; age: " + age +
-                " years.";
-    }
 }
