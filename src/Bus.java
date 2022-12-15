@@ -1,8 +1,8 @@
 public class Bus extends Transport {
 
-    public Bus(String brand, String model, int productionYear, String productionCountry, String color,
+    public Bus(String brand, String model, String productionCountry, int productionYear, String color,
                double maxSpeed) {
-        super(brand, model, productionYear, productionCountry, color, maxSpeed, brand1, model1, productionCountry3, productionYear1);
+        super(brand, model, productionCountry, productionYear, color, maxSpeed);
     }
 
 
@@ -19,7 +19,5 @@ public class Bus extends Transport {
                 getMaxSpeed() + ".";
     }
 
-    private String getMaxSpeed() {
-        return null;
-    }
+
 }

@@ -1,35 +1,96 @@
+/*
 
 
-public class Train extends Transport {
+public  abstract class Transport {
 
-    private static final String model1 = null;
-    double travelPrice;
-    double travelTime;
-    String departureStation;
-    String arrivalStation;
-    int wagonsCount;
-    private String refill;
 
-    public Train(String brand, String model, String productionCountry, int productionYear, String color, double maxSpeed) {
-        super(brand, model, productionCountry, productionYear, color, model1, productionCountry1, productionCountry2, productionCountry3, maxSpeed);
+    private String brand;
+    private String model;
+    private int productionYear;
+    private String productionCountry;
+    private String color;
+    private double maxSpeed;
+
+    protected Transport(String model) {
+        this.model = model;
     }
 
-    public Train(String brand, String model, int productionYear, String productionCountry, double maxSpeed) {
-        super(brand, model, productionYear, productionCountry, maxSpeed, model1, productionCountry1, productionCountry2, productionCountry3);
+
+    public Transport(String brand, String model, String productionCountry, int productionYear, String color, double maxSpeed) {
+        this.model = model;
+        this.maxSpeed = maxSpeed;
+        this.brand = brand;
+        this.productionCountry = productionCountry;
+        this.productionYear = productionYear;
+        this.color = color;
+
     }
 
-    public Train(String brand, String model, int productionYear, String productionCountry, String color, double maxSpeed, String brand1, String model1, int productionYear1, String productionCountry1) {
-        super(brand, model, productionYear, productionCountry, color, maxSpeed, brand1, model1, productionYear1, productionCountry1);
+    public abstract void refill();
+
+    public String getBrand() {
+        return brand;
     }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getProductionYear() {
+        return productionYear;
+    }
+
+    public String getProductionCountry() {
+        return productionCountry;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+}
 
     //public Train(String refill) {
         //super(brand, getModel(), getProductionYear(), productionCountry, "Данные не корректные", maxSpeed);
         //this.refill = refill;
 
 
+        */
+/**
+         *
+         *//*
+
     @Override
     public void refill() {
 
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setProductionYear(int productionYear) {
+        this.productionYear = productionYear;
+    }
+
+    public void setProductionCountry(String productionCountry) {
+        this.productionCountry = productionCountry;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
     }
 }
 
@@ -39,7 +100,8 @@ public class Train extends Transport {
             //    "Данные не корректные", "Данные не корректные", 10, "дизель");
     //*
 
-    /*public Train(double maxSpeed) {
+    */
+/*public Train(double maxSpeed) {
         super(brand, model, productionYear, productionCountry, maxSpeed);
 
         this.departureStation = ValidateUtils.validateString(departureStation);
@@ -121,4 +183,5 @@ public class Train extends Transport {
                 + getWagonsCount() + " вагонов, заправка: " + refill + ".";
     }
 
-     */
+     *//*
+

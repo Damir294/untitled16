@@ -1,32 +1,83 @@
-public  abstract class Transport {
+public abstract class Transport{
 
 
-    String brand;
-    private final String model;
+    private String brand;
+    private String model;
     private int productionYear;
-    private String productionCountry1;
-    private String productionCountry2;
     private String productionCountry;
     private String color;
     private double maxSpeed;
 
-    protected Transport(String model) {
+    protected Transport(String model, String s, int productionYear, String productionCountry, String color, double maxSpeed, String brand1, String model1, int productionYear1, String productionCountry1) {
         this.model = model;
     }
 
+    public Transport(String brand, String model, String productionCountry, int productionYear, String color, double maxSpeed) {
+    }
 
-    public String Transport(String brand, String model, int productionYear, String productionCountry, String ignoredДанныеНеКорректные, double maxSpeed) {
-            //this(null, null, 0, null, null, 0.0);
 
-
-    //public Transport(String brand, String model, int productionCountry, String productionYear, String color, String model1, String productionCountry1, String productionCountry2, String productionCountry3, double maxSpeed) {
-            this(brand, model, productionYear, productionCountry, color, 0, productionCountry1, productionCountry2, productionCountry3);
-        this.model = model1;
+    public void Transport(String brand, String model, String productionCountry, int productionYear, String color, double maxSpeed) {
+        this.model = model;
         this.maxSpeed = maxSpeed;
-        this.brand = null;
-    //}
+        this.brand = brand;
+        this.productionCountry = productionCountry;
+        this.productionYear = productionYear;
+        this.color = color;
 
-        //public Transport(String brand, String model, int productionYear, String productionCountry, double maxSpeed, String model1, String productionCountry1, String productionCountry2, String productionCountry3) {
+    }
+
+    public abstract void refill();
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getProductionYear() {
+        return productionYear;
+    }
+
+    public String getProductionCountry() {
+        return productionCountry;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setProductionYear(int productionYear) {
+        this.productionYear = productionYear;
+    }
+
+    public void setProductionCountry(String productionCountry) {
+        this.productionCountry = productionCountry;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+}
+
+  /*      //public Transpor(String brand, String model, int productionYear, String productionCountry, double maxSpeed, String model1, String productionCountry1, String productionCountry2, String productionCountry3) {
             //this(brand, model, productionYear, productionCountry, "Данные не корректные", model1, productionCountry1, productionCountry2, productionCountry3, maxSpeed);
             //this.productionYear = productionYear;
             //this.maxSpeed = maxSpeed;
@@ -37,7 +88,7 @@ public  abstract class Transport {
         //}
 
 
-        //*public Transport(String brand, String model, int productionYear, String productionCountry,
+        //*public Transpor(String brand, String model, int productionYear, String productionCountry,
                         // String color, double maxSpeed, String brand1, String model1, int productionYear1, String productionCountry1) {
 
            //= validateDoubleNum(maxSpeed);
@@ -49,7 +100,7 @@ public  abstract class Transport {
 
     //*public abstract void refill();
 
-        public String getBrand() {
+   //     public String getBrand() {
             return Integer.parseInt(brand);
         }
 
@@ -86,3 +137,27 @@ public  abstract class Transport {
       //  public void showCharacteristics() {
           //  System.out.println(toString());
 //}/*
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setProductionYear(int productionYear) {
+        this.productionYear = productionYear;
+    }
+
+    public void setProductionCountry(String productionCountry) {
+        this.productionCountry = productionCountry;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+  //*  }*/
